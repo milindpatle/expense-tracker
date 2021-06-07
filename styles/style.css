@@ -55,4 +55,9 @@ h4{
     margin: 20px 0;
 
 }
+.inc-exp-container > div {
+    flex: 1;
+    text-align: center;
+
+}
         
