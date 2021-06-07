@@ -4,11 +4,50 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Expense Traccker</title>
+  <title>Expense Traccker - vanilla Js</title>
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+  <h2><Em>Expense Tracker</Em></h2>
+  <div class="container">
+    <h4>Your  Balance</h4>
+    <h1 id = "Balance">₹0.00 </h1>
+  </div>
+  <div>
+    <p id="money-plus" class="money-plus">+₹0.00</p>
+  </div>
+  <div>
+    <h4>Expense</h4>
+    <p id="money-minus" class="money-minus">+₹0.00</p>
+  </div>
+  <h3>History</h3>
+  <ul id="id" class="list">
+    <li class="minus">
+      cash <span>-₹500</span><button class="delete-btn">x</button>
+    </li>
+    <li class="plus">
+      cash <span>-₹300</span><button class="delete-btn">x</button>
+    </li>
+  </ul>
+  <h3>Add New Transaction</h3>
+  <form action="#" id="from">
+    <div class="from-control">
+      <label for="">
+        <input type="text"  id="text"
+        placeholder="Enter Transaction" />
+      </label>
+    </div>
+    <div class="from-control">
+      <label for="amount">
+        Amount
+         (negative - expence,positive-income)
+
+      </label>
+      <input type="number" id="amount" placeholder="Enter amount...">
+    </div>
+    <button class="btn" type="submit">Add Transaction</button>
+  </form>
 
   <script src="./scripts/script.js"></script>
 </body>
