@@ -20,18 +20,18 @@ const transaction= document.getElementById
 const amount= document.getElementById
 ('amount');
 
-const dummyTransaction = [
-    {id: 1,transaction:"Books"
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
 
-}];
+    const newTransaction = 
+    {
+        id: generateRandomID(),
+        transaction: transaction.value,
+        amount: +amount.value,
+    };
+    transaction.push(newTransaction);
 
-const dummyTransaction = [
-    {id:1, transaction: 'Books' , amount: -100},
-    {id:2, transaction: 'Coins' , amount: 200},
-    {id:3, transaction: 'Breakfast' , amount: -300},
-    {id:4, transaction: 'Mobile' , amount: 400},
-];
-//add transaction to DOM
+});
 
 function addTransactionDOM(transaction){
     //get sing
@@ -41,6 +41,9 @@ function init(){
     list.innerHTML = '';
     dummyTransactionDOM.forEach(addTransactionDOM);
 
-}
+    console.log(transactions);
+};
 
-init();
+const generateRandomID =function () {
+    return Math.floor(Math.random() * 1000);
+};
