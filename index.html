@@ -15,18 +15,18 @@
     <h1 id = "Balance">₹0.00 </h1>
   </div>
   <div class="inc-exp-container">
-  <div>
-    <h5>INCOME</h5>
+  <div class="money">
+    <h5>Income</h5>
     <p id="money-plus" class="money-plus">+₹0.00</p>
   </div>
   
-  <div>
+  <div class="money">
     <h4>Expense</h4>
     <p id="money-minus" class="money-minus">+₹0.00</p>
   </div>
   </div>
   <h3>History</h3>
-  <ul id="id" class="list">
+  <ul id="list" class="list">
     <li class="minus">
       cash <span>-₹500</span><button class="delete-btn">x</button>
     </li>
@@ -37,8 +37,10 @@
   <h3>Add New Transaction</h3>
   <form action="#" id="from">
     <div class="from-control">
-      <label for="">
-        <input type="text"  id="text"
+      <label for="Transaction">Transaction</label>
+        <input 
+        type="transaction"
+        id="transaction"
         placeholder="Enter Transaction" />
       </label>
     </div>
